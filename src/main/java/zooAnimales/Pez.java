@@ -1,7 +1,7 @@
 package zooAnimales;
 import java.util.*;
 
-class Pez extends Animal{
+public class Pez extends Animal{
 
     private static ArrayList<Pez> listado;
     public static int salmones;

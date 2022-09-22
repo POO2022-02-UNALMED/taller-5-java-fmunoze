@@ -1,11 +1,11 @@
 package gestion;
 import java.util.*;
 
-class Zoologico{
-    
+public class Zoologico{
+
     private String nombre;
     private String ubicacion;
-    private ArrayList<Zona> zonas;
+    private ArrayList<Zona> zonas = new ArrayList<Zona>();
 
     //constructor
     public Zoologico(String nombre, String ubicacion) {
@@ -18,7 +18,9 @@ class Zoologico{
 
     //metodos
     public void agregarZonas(Zona Z){
-        this.zonas.add(Z);
+        if (Z != null) {
+            this.zonas.add(Z);
+        }
     }
     public int cantidadTotalAnimales(){
         int cantidadAnimales = 0;

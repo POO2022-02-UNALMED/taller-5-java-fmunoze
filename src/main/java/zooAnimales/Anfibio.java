@@ -1,7 +1,7 @@
 package zooAnimales;
 import java.util.*;
 
-class Anfibio extends Animal{
+public class Anfibio extends Animal{
 
     private static ArrayList<Anfibio> listado;
     public static int ranas;
@@ -10,12 +10,16 @@ class Anfibio extends Animal{
     private boolean venenoso;
 
     //constructor
-    public Anfibio(String nombre, int edad, String habitat, String genero,  String colorPiel, boolean venenoso) {
-    super(nombre, edad, habitat, genero);
-    this.colorPiel = colorPiel;
-    this.venenoso = venenoso;
-    listado.add(this);
-    }
+	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
+		this.setNombre(nombre);
+		this.setEdad(edad);
+		this.setHabitat(habitat);
+		this.setGenero(genero);
+		this.setColorPiel(colorPiel);
+		this.setVenenoso(venenoso);
+		super.setTotalAnimales(super.getTotalAnimales() + 1);
+		listado.add(this);
+	}
 
     public Anfibio() {
     }

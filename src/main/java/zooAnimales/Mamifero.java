@@ -1,7 +1,7 @@
 package zooAnimales;
 import java.util.*;
 
-class Mamifero extends Animal{
+public class Mamifero extends Animal{
 
     private static ArrayList<Mamifero> listado;
     public static int caballos;
