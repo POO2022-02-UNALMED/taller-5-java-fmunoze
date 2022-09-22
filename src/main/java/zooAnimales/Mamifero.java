@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Mamifero extends Animal{
 
-    private static ArrayList<Mamifero> listado;
+    private static ArrayList<Mamifero> listado = new ArrayList<>();
     public static int caballos;
     public static int leones;
     private boolean pelaje;
@@ -18,6 +18,7 @@ public class Mamifero extends Animal{
     }
 
     public Mamifero() {
+        listado.add(this);
     }
 
     //metodos
